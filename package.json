@@ -1,0 +1,13 @@
+{
+  "name": "heterarchy-writings",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Heterarchy Society writings — primary source texts",
+  "scripts": {
+    "build": "heterarchy-atlas build"
+  },
+  "dependencies": {
+    "@heterarchy/atlas": "github:heterarchy-society/atlas"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,8 @@
+[collection]
+name = "writings"
+source_dir = "writings"
+format = "md"
+output_key = "writings"
+git_history = true
+dir_based = true
+copy_sources = true
