@@ -5,6 +5,11 @@ authors:
 year: 1993
 language: en
 type: manifesto
+glossary:
+  - cypherpunk
+  - crypto-wars
+  - privacy
+  - cryptography
 sources:
   - path: main.txt
     format: txt
