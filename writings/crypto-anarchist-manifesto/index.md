@@ -15,6 +15,9 @@ sources:
     format: md
   - path: main.txt
     format: txt
+audio:
+  - url: https://archive.pp0.co/audio/the-crypto-anarchist-manifesto.mp3
+    duration: "3:19"
 references:
   - url: https://www.activism.net/cypherpunk/crypto-anarchy.html
     role: original

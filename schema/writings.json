@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://heterarchy.fyi/schema/writing.json",
+  "type": "object",
+  "required": ["id", "title", "authors", "year", "language", "type", "description"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9\\-]+$"
+    },
+    "title": { "type": "string", "minLength": 1 },
+    "authors": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "year": { "type": "integer" },
+    "language": { "type": "string", "enum": ["en", "cs", "de"] },
+    "type": {
+      "type": "string",
+      "enum": ["manifesto", "essay", "article", "speech", "letter", "book-excerpt"]
+    },
+    "description": { "type": "string", "minLength": 1 },
+    "glossary": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z0-9\\-]+$" },
+      "uniqueItems": true
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["format"],
+        "additionalProperties": false,
+        "properties": {
+          "path": { "type": "string" },
+          "format": { "type": "string", "enum": ["md", "txt", "typst", "pdf", "html", "mp3"] },
+          "variant": { "type": "string" },
+          "generated_from": { "type": "string" }
+        }
+      }
+    },
+    "audio": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["url"],
+        "additionalProperties": false,
+        "properties": {
+          "url": { "type": "string", "format": "uri" },
+          "duration": { "type": "string", "pattern": "^[0-9]+:[0-5][0-9]$" },
+          "title": { "type": "string" },
+          "narrator": { "type": "string" }
+        }
+      }
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["url", "role"],
+        "additionalProperties": false,
+        "properties": {
+          "url": { "type": "string", "format": "uri" },
+          "role": { "type": "string" }
+        }
+      }
+    },
+    "license": { "type": "string" },
+    "_assets": { "type": "object" },
+    "contributors": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}
