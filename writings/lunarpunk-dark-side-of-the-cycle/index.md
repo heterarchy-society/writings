@@ -6,6 +6,7 @@ year: 2022
 language: en
 type: essay
 glossary:
+  - lunarpunk
   - cypherpunk
   - privacy
   - anonymous-communication
@@ -20,7 +21,7 @@ references:
     role: original
 license: unknown
 ---
-A lunarpunk manifesto disguised as market analysis. The essay argues that solarpunk's
+A [[lunarpunk]] manifesto disguised as market analysis. The essay argues that solarpunk's
 optimism and transparency are structural fragilities — when regulatory pressure mounts,
 transparent systems expose their users and collapse. [[anonymous-communication|Anonymity]]
 and [[encryption]] are not optional extras but the precondition for crypto's antifragility.
