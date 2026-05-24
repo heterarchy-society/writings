@@ -10,6 +10,8 @@ glossary:
   - parallel-society
   - samizdat
 sources:
+  - path: main.md
+    format: md
   - path: main.pdf
     format: pdf
 references:
