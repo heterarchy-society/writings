@@ -15,10 +15,6 @@ sources:
     format: md
   - path: main.typ
     format: typst
-    variant: scroll
-  - path: main-paged.typ
-    format: typst
-    variant: paged
   - path: main.pdf
     format: pdf
     generated_from: main-paged.typ
