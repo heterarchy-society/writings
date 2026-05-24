@@ -11,6 +11,8 @@ glossary:
   - cryptography
   - anonymous-communication
 sources:
+  - path: main.md
+    format: md
   - path: main.txt
     format: txt
 references:

@@ -11,6 +11,8 @@ glossary:
   - privacy
   - cryptography
 sources:
+  - path: main.md
+    format: md
   - path: main.typ
     format: typst
     variant: scroll
@@ -20,9 +22,6 @@ sources:
   - path: main.pdf
     format: pdf
     generated_from: main-paged.typ
-  - path: main.html
-    format: html
-    generated_from: main.typ
   - path: main.txt
     format: txt
 references:

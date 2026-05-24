@@ -3,8 +3,6 @@ The Crypto Anarchist Manifesto
 Timothy C. May
 <tcmay@netcom.com>
 
-<!-- body -->
-
 A specter is haunting the modern world, the specter of crypto
 anarchy.
 
