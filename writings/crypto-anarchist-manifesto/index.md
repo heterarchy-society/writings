@@ -18,8 +18,14 @@ references:
     role: original
 license: free to redistribute (per author)
 ---
-Precursor to A Cypherpunk's Manifesto, written in 1988 and first distributed at the Crypto '88
-conference. May predicts that [[cryptography]] will enable fully [[anonymous-communication|anonymous]]
-commerce and communication, fundamentally undermining the ability of governments and corporations
-to tax, regulate, and surveil. The text laid the intellectual foundation of the [[cryptoanarchy]]
-movement and directly inspired the formation of the [[cypherpunk|Cypherpunks]] in 1992.
+A short, incendiary prediction: [[cryptography]] will make it possible for individuals to
+communicate, trade, and contract in total anonymity — beyond the reach of any state. Written
+by Timothy C. May in 1988 and distributed at the founding meeting of the [[cypherpunk|Cypherpunks]]
+in 1992.
+
+May wrote the manifesto four years before the public internet existed in any meaningful form.
+He anticipated [[anonymous-communication|anonymous networks]], untraceable transactions, and
+information markets — and argued that these technologies would be "essentially unstoppable"
+regardless of what governments attempted. The [[cryptoanarchy]] movement that grew from this
+text treated the manifesto less as a call to arms and more as an engineering specification: a
+description of a world already becoming inevitable.

@@ -19,9 +19,15 @@ references:
     role: original
 license: public domain
 ---
-Foundational text of the Czech dissident movement, in which Benda articulates the concept of
-the [[parallel-society|parallel polis]] — a set of parallel social structures operating outside
-the framework of the totalitarian state. Rather than direct confrontation with power, he
-proposes building alternative institutions: education, culture, information networks, and legal
-protection. Written as [[samizdat]] and adopted as a programmatic document of Charter 77, the
-essay continues to shape thinking about building autonomous communities beyond dominant systems.
+Benda's 1978 essay coins the concept of the [[parallel-society|parallel polis]]: a network of
+independent institutions — schools, courts, media, cultural spaces — built alongside the
+totalitarian state rather than in direct opposition to it. The goal is not to overthrow the
+system but to make it irrelevant.
+
+Written as [[samizdat]] and circulated within Charter 77, the essay was a response to the
+question of what dissidents should actually do after signing a protest document. Benda's answer
+was structural: build the alternative so completely that people have somewhere else to live,
+learn, and work. The parallel polis is not a temporary refuge but a permanent construction
+project. Decades later the essay remains the clearest articulation of why building matters more
+than protesting — a logic that runs through everything from [[cypherpunk|cypherpunk]] projects
+to contemporary intentional communities.
