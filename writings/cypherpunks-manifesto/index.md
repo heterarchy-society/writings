@@ -21,9 +21,9 @@ references:
 license: free to redistribute (per author)
 ---
 Foundational text of the [[cypherpunk]] movement, written during the
-[[Crypto Wars]] of the early 1990s. Hughes argues that privacy in the
-electronic age must be defended through cryptography, because no
+[[Crypto Wars]] of the early 1990s. Hughes argues that [[privacy]] in the
+electronic age must be defended through [[cryptography]], because no
 institution will provide it. The manifesto established the link
-between strong cryptography, individual privacy, and political
+between strong [[encryption]], individual privacy, and political
 autonomy, and set the agenda for two decades of crypto-political
 work that followed.

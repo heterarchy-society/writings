@@ -19,8 +19,9 @@ references:
     role: original
 license: public domain
 ---
-Klíčový text českého disentu, v němž Benda formuluje koncept paralelní polis — souběžných
-společenských struktur fungujících mimo rámec totalitního státu. Namísto přímé konfrontace
-s mocí navrhuje budovat alternativní instituce: vzdělání, kulturu, informační sítě a právní
-ochranu. Esej se stala programovým dokumentem Charty 77 a dodnes tvaruje myšlení o
-budování autonomních komunit mimo dominantní systémy.
+Foundational text of the Czech dissident movement, in which Benda articulates the concept of
+the [[parallel-society|parallel polis]] — a set of parallel social structures operating outside
+the framework of the totalitarian state. Rather than direct confrontation with power, he
+proposes building alternative institutions: education, culture, information networks, and legal
+protection. Written as [[samizdat]] and adopted as a programmatic document of Charter 77, the
+essay continues to shape thinking about building autonomous communities beyond dominant systems.

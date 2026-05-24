@@ -18,7 +18,8 @@ references:
     role: original
 license: free to redistribute (per author)
 ---
-Předchůdce Cypherpunk Manifestu, napsaný v roce 1988 a poprvé distribuovaný na konferenci
-Crypto '88. May předpovídá, že kryptografie umožní zcela anonymní komunikaci a obchod,
-čímž fundamentálně změní roli vlád a korporací. Text postavil myšlenkový základ
-kryptoanarchistického hnutí a přímo inspiroval vznik skupiny Cypherpunks v roce 1992.
+Precursor to A Cypherpunk's Manifesto, written in 1988 and first distributed at the Crypto '88
+conference. May predicts that [[cryptography]] will enable fully [[anonymous-communication|anonymous]]
+commerce and communication, fundamentally undermining the ability of governments and corporations
+to tax, regulate, and surveil. The text laid the intellectual foundation of the [[cryptoanarchy]]
+movement and directly inspired the formation of the [[cypherpunk|Cypherpunks]] in 1992.
