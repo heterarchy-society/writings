@@ -2,6 +2,8 @@
 
 **By lunar-mining · 22 February 2022**
 
+<!-- body -->
+
 Science fiction is a speculative exercise. By speculating on possible futures, sci-fi expands the space of possibilities. Crypto is an extreme kind of sci-fi because as well as offering a vision of the future it also provides the tools to make that future possible.
 
 Crypto is currently energized by a sci-fi called solarpunk. Evolved from cyberpunk, solarpunk is a utopian vision of the future characterized by its optimism. For solarpunks, the future is bright. Solarpunk casts away the dystopian shadows of cyberpunk and illuminates a world beyond the chaotic horizon.

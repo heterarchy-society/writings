@@ -5,6 +5,8 @@
 
 ---
 
+<!-- body -->
+
 Především si myslím, že problém jak a co dál včetně rozpaků, depresí a konfliktů, které vyvolává - byl v plném rozsahu nastolen již úvodním prohlášením. Chci tím mimo jiné říci, že všechny peripetie uplynulých 16 měsíců, ať již se týkají vnějších vazeb, či chování jednotlivců, skupin a proudů „uvnitř" Charty, přispěly k naší dnešní nejistotě (až na její načasováno jen poměrně okrajově: hned se pokusím vysvětlit, v čem vidím zásadní příčinu této nejistoty.
 
 Charta 77 zaznamenala alespoň dva pozoruhodné úspěchy: zahrnula neuvěřitelně širokou škálu politických názorů i občanských mentalit a dokázala v podstatě zůstat na půdě legality. Za tyto výsledky zaplatila tím, že se od počátku ocitla do značné míry v schizofrenní situaci. Na jedné straně se zřejmě všichni přes hluboké rozdíly v zásadnosti kritiky a přes jiné hlubší rozdíly v představách o možné nápravě shodneme na velmi pochmurném hodnocení systému a fungování současné politické moci. Na straně druhé jednáme tak, jako bychom nenahlíželi, že tvrzení politické moci o jejích dobrých úmyslech a zákonná ustanovení, jimiž zdánlivě omezuje svou totalitu, jsou pouhou propagandistickou zástěrkou. Takové „vzetí za slovo" je samo o sobě velmi důvtipným manévrem. Nicméně při všemu respektu k důvtipu nemůže takový přístup dosáhnout mobilizujícího účinku a ubránit se lži, nedokáže-li přemostit propast mezi oběma výše zmíněnými polohami. Charta 77 dokázala tuto rozpolcenost dočasně - byť velmi efektivně - zlikvidovat krajním zdůrazněním etických aspektů a preferencí mravního postoje vůči politickému.
