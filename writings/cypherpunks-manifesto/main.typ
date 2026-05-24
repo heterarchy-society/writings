@@ -2,15 +2,11 @@
 #set text(font: "New Computer Modern", size: 11pt, lang: "en")
 #set par(justify: true, leading: 0.75em, spacing: 1.2em)
 
-#align(center)[
-  #text(size: 16pt, weight: "bold")[A Cypherpunk's Manifesto]
-  #v(0.4em)
-  #text(size: 11pt)[by Eric Hughes]
-  #v(0.2em)
-  #text(size: 9pt, fill: luma(100))[9 March 1993]
-]
+= A Cypherpunk's Manifesto
 
-#v(1.5em)
+#align(center)[by Eric Hughes · 9 March 1993]
+
+#v(1em)
 
 Privacy is necessary for an open society in the electronic age. Privacy is not secrecy. A private matter is something one doesn't want the whole world to know, but a secret matter is something one doesn't want anybody to know. Privacy is the power to selectively reveal oneself to the world.
 

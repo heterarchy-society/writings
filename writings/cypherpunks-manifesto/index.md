@@ -20,6 +20,9 @@ sources:
   - path: main.pdf
     format: pdf
     generated_from: main-paged.typ
+  - path: main.html
+    format: html
+    generated_from: main.typ
   - path: main.txt
     format: txt
 references:
