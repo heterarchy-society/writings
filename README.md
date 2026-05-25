@@ -25,6 +25,7 @@ writings/cypherpunks-manifesto/
 | `title` | yes | string | Full title |
 | `authors` | yes | string[] | Author(s) |
 | `year` | yes | number | Year of publication |
+| `date` | no | string | Original publication date (`YYYY-MM-DD`) |
 | `language` | yes | string | Language code (`en`, `cs`, ...) |
 | `type` | yes | string | Type (e.g. `manifesto`, `essay`, `letter`) |
 | `sources` | yes | object[] | Local source files (`path` + `format`) |
