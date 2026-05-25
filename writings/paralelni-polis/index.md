@@ -1,7 +1,7 @@
 ---
 title: Paralelní polis
 authors:
-  - Václav Benda
+  - Václav Benda|vaclav-benda
 year: 1978
 language: cs
 type: essay
