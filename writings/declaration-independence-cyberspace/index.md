@@ -1,7 +1,7 @@
 ---
 title: A Declaration of the Independence of Cyberspace
 authors:
-  - John Perry Barlow
+  - John Perry Barlow|john-perry-barlow
 year: 1996
 language: en
 type: manifesto

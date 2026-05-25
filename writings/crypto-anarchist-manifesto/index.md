@@ -1,7 +1,7 @@
 ---
 title: The Crypto Anarchist Manifesto
 authors:
-  - Timothy C. May
+  - Timothy C. May|timothy-c-may
 year: 1988
 language: en
 type: manifesto

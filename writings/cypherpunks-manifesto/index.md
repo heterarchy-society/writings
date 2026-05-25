@@ -1,7 +1,7 @@
 ---
 title: A Cypherpunk's Manifesto
 authors:
-  - Eric Hughes
+  - Eric Hughes|eric-hughes
 year: 1993
 language: en
 type: manifesto
