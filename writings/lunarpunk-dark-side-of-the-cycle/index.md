@@ -1,7 +1,7 @@
 ---
 title: Lunarpunk and the Dark Side of the Cycle
 authors:
-  - lunar-mining
+  - lunar-mining|lunar-mining
 year: 2022
 language: en
 type: essay
