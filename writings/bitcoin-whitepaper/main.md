@@ -22,17 +22,17 @@ We define an electronic coin as a chain of digital signatures. Each owner transf
 
 The problem of course is the payee can’t verify that one of the owners did not double-spend the coin. A common solution is to introduce a trusted central authority, or mint, that checks every transaction for double spending. After each transaction, the coin must be returned to the mint to issue a new coin, and only coins issued directly from the mint are trusted not to be double-spent. The problem with this solution is that the fate of the entire money system depends on the company running the mint, with every transaction having to go through them, just like a bank.
 
-We need a way for the payee to know that the previous owners did not sign any earlier transactions. For our purposes, the earliest transaction is the one that counts, so we don’t care about later attempts to double-spend. The only way to confirm the absence of a transaction is to be aware of all transactions. In the mint based model, the mint was aware of all transactions and decided which arrived first. To accomplish this without a trusted party, transactions must be publicly announced[1], and we need a system for participants to agree on a single history of the order in which they were received. The payee needs proof that at the time of each transaction, the majority of nodes agreed it was the first received.
+We need a way for the payee to know that the previous owners did not sign any earlier transactions. For our purposes, the earliest transaction is the one that counts, so we don’t care about later attempts to double-spend. The only way to confirm the absence of a transaction is to be aware of all transactions. In the mint based model, the mint was aware of all transactions and decided which arrived first. To accomplish this without a trusted party, transactions must be publicly announced [1](#ref-1), and we need a system for participants to agree on a single history of the order in which they were received. The payee needs proof that at the time of each transaction, the majority of nodes agreed it was the first received.
 
 ## 3. Timestamp Server
 
-The solution we propose begins with a timestamp server. A timestamp server works by taking a hash of a block of items to be timestamped and widely publishing the hash, such as in a newspaper or Usenet post[2-5]. The timestamp proves that the data must have existed at the time, obviously, in order to get into the hash. Each timestamp includes the previous timestamp in its hash, forming a chain, with each additional timestamp reinforcing the ones before it.
+The solution we propose begins with a timestamp server. A timestamp server works by taking a hash of a block of items to be timestamped and widely publishing the hash, such as in a newspaper or Usenet post [2](#ref-2)–[5](#ref-5). The timestamp proves that the data must have existed at the time, obviously, in order to get into the hash. Each timestamp includes the previous timestamp in its hash, forming a chain, with each additional timestamp reinforcing the ones before it.
 
 ![Timestamp server](assets/timestamp-server.svg)
 
 ## 4. Proof-of-Work
 
-To implement a distributed timestamp server on a peer-to-peer basis, we will need to use a proof-of-work system similar to Adam Back’s Hashcash[6], rather than newspaper or Usenet posts. The proof-of-work involves scanning for a value that when hashed, such as with SHA-256, the hash begins with a number of zero bits. The average work required is exponential in the number of zero bits required and can be verified by executing a single hash.
+To implement a distributed timestamp server on a peer-to-peer basis, we will need to use a proof-of-work system similar to Adam Back’s Hashcash [6](#ref-6), rather than newspaper or Usenet posts. The proof-of-work involves scanning for a value that when hashed, such as with SHA-256, the hash begins with a number of zero bits. The average work required is exponential in the number of zero bits required and can be verified by executing a single hash.
 
 For our timestamp network, we implement the proof-of-work by incrementing a nonce in the block until a value is found that gives the block’s hash the required zero bits. Once the CPU effort has been expended to make it satisfy the proof-of-work, the block cannot be changed without redoing the work. As later blocks are chained after it, the work to change the block would include redoing all the blocks after it.
 
@@ -67,7 +67,7 @@ The incentive may help encourage nodes to stay honest. If a greedy attacker is a
 
 ## 7. Reclaiming Disk Space
 
-Once the latest transaction in a coin is buried under enough blocks, the spent transactions before it can be discarded to save disk space. To facilitate this without breaking the block’s hash, transactions are hashed in a Merkle Tree [7][2][5], with only the root included in the block’s hash. Old blocks can then be compacted by stubbing off branches of the tree. The interior hashes do not need to be stored.
+Once the latest transaction in a coin is buried under enough blocks, the spent transactions before it can be discarded to save disk space. To facilitate this without breaking the block’s hash, transactions are hashed in a Merkle Tree [7](#ref-7)[2](#ref-2)[5](#ref-5), with only the root included in the block’s hash. Old blocks can then be compacted by stubbing off branches of the tree. The interior hashes do not need to be stored.
 
 ![Reclaiming disk space](assets/reclaiming-disk-space.svg)
 
@@ -103,30 +103,30 @@ We consider the scenario of an attacker trying to generate an alternate chain fa
 
 The race between the honest chain and an attacker chain can be characterized as a Binomial Random Walk. The success event is the honest chain being extended by one block, increasing its lead by +1, and the failure event is the attacker’s chain being extended by one block, reducing the gap by -1.
 
-The probability of an attacker catching up from a given deficit is analogous to a Gambler’s Ruin problem. Suppose a gambler with unlimited credit starts at a deficit and plays potentially an infinite number of trials to try to reach breakeven. We can calculate the probability he ever reaches breakeven, or that an attacker ever catches up with the honest chain, as follows:[8]
+The probability of an attacker catching up from a given deficit is analogous to a Gambler’s Ruin problem. Suppose a gambler with unlimited credit starts at a deficit and plays potentially an infinite number of trials to try to reach breakeven. We can calculate the probability he ever reaches breakeven, or that an attacker ever catches up with the honest chain, as follows: [8](#ref-8)
 
 $$
 \begin{aligned}
 p &= \text{probability an honest node finds the next block} \\
 q &= \text{probability the attacker finds the next block} \\
-q_z &= \text{probability the attacker will ever catch up from $z$ blocks behind}
+q_z &= \text{probability the attacker will ever catch up from } z \text{ blocks behind}
 \end{aligned}
 $$
 
 $$
-\large q_z = \begin{Bmatrix}
-1 & \text{if}\; p \leq q\newline
-(q/p)^z & \text{if}\; p > q
-\end{Bmatrix}
+q_z = \begin{cases}
+1 & \text{if } p \leq q \\
+\left(\dfrac{q}{p}\right)^z & \text{if } p > q
+\end{cases}
 $$
 
-Given our assumption that \(p \gt q\), the probability drops exponentially as the number of blocks the attacker has to catch up with increases. With the odds against him, if he doesn’t make a lucky lunge forward early on, his chances become vanishingly small as he falls further behind.
+Given our assumption that $p > q$, the probability drops exponentially as the number of blocks the attacker has to catch up with increases. With the odds against him, if he doesn’t make a lucky lunge forward early on, his chances become vanishingly small as he falls further behind.
 
 We now consider how long the recipient of a new transaction needs to wait before being sufficiently certain the sender can’t change the transaction. We assume the sender is an attacker who wants to make the recipient believe he paid him for a while, then switch it to pay back to himself after some time has passed. The receiver will be alerted when that happens, but the sender hopes it will be too late.
 
 The receiver generates a new key pair and gives the public key to the sender shortly before signing. This prevents the sender from preparing a chain of blocks ahead of time by working on it continuously until he is lucky enough to get far enough ahead, then executing the transaction at that moment. Once the transaction is sent, the dishonest sender starts working in secret on a parallel chain containing an alternate version of his transaction.
 
-The recipient waits until the transaction has been added to a block and \(z\) blocks have been linked after it. He doesn’t know the exact amount of progress the attacker has made, but assuming the honest blocks took the average expected time per block, the attacker’s potential progress will be a Poisson distribution with expected value:
+The recipient waits until the transaction has been added to a block and $z$ blocks have been linked after it. He doesn’t know the exact amount of progress the attacker has made, but assuming the honest blocks took the average expected time per block, the attacker’s potential progress will be a Poisson distribution with expected value:
 
 $$
 \lambda = z \frac{q}{p}
@@ -136,10 +136,10 @@ To get the probability the attacker could still catch up now, we multiply the Po
 
 $$
 \sum_{k=0}^{\infty} \frac{\lambda^k e^{-\lambda}}{k!} \cdot
-\begin{Bmatrix}
-(q/p)^{(z-k)} & \text{if}\; k\leq z\newline
-1 & \text{if}\; k > z
-\end{Bmatrix}
+\begin{cases}
+\left(\dfrac{q}{p}\right)^{z-k} & \text{if } k \leq z \\
+1 & \text{if } k > z
+\end{cases}
 $$
 
 Rearranging to avoid summing the infinite tail of the distribution…
@@ -170,7 +170,7 @@ double AttackerSuccessProbability(double q, int z)
 }
 ```
 
-Running some results, we can see the probability drop off exponentially with \(z\).
+Running some results, we can see the probability drop off exponentially with $z$.
 
 ```text
 q=0.1
@@ -220,18 +220,18 @@ We have proposed a system for electronic transactions without relying on trust. 
 
 ## References
 
-1. W. Dai, ["b-money,"](https://nakamotoinstitute.org/b-money/) [http://www.weidai.com/bmoney.txt](http://www.weidai.com/bmoney.txt), 1998.
+1. <span id="ref-1"></span>W. Dai, ["b-money,"](https://nakamotoinstitute.org/b-money/) [http://www.weidai.com/bmoney.txt](http://www.weidai.com/bmoney.txt), 1998.
 
-2. H. Massias, X.S. Avila, and J.-J. Quisquater, ["Design of a secure timestamping service with minimal trust requirements,"](https://cdn.nakamotoinstitute.org/docs/secure-timestamping-service.pdf) In *20th Symposium on Information Theory in the Benelux*, May 1999.
+2. <span id="ref-2"></span>H. Massias, X.S. Avila, and J.-J. Quisquater, ["Design of a secure timestamping service with minimal trust requirements,"](https://cdn.nakamotoinstitute.org/docs/secure-timestamping-service.pdf) In *20th Symposium on Information Theory in the Benelux*, May 1999.
 
-3. S. Haber, W.S. Stornetta, ["How to time-stamp a digital document,"](https://nakamotoinstitute.org/library/time-stamp-digital-document/) In *Journal of Cryptology*, vol 3, no 2, pages 99-111, 1991.
+3. <span id="ref-3"></span>S. Haber, W.S. Stornetta, ["How to time-stamp a digital document,"](https://nakamotoinstitute.org/library/time-stamp-digital-document/) In *Journal of Cryptology*, vol 3, no 2, pages 99-111, 1991.
 
-4. D. Bayer, S. Haber, W.S. Stornetta, ["Improving the efficiency and reliability of digital time-stamping,"](https://nakamotoinstitute.org/library/improving-time-stamping/) In *Sequences II: Methods in Communication, Security and Computer Science*, pages 329-334, 1993.
+4. <span id="ref-4"></span>D. Bayer, S. Haber, W.S. Stornetta, ["Improving the efficiency and reliability of digital time-stamping,"](https://nakamotoinstitute.org/library/improving-time-stamping/) In *Sequences II: Methods in Communication, Security and Computer Science*, pages 329-334, 1993.
 
-5. S. Haber, W.S. Stornetta, ["Secure names for bit-strings,"](https://cdn.nakamotoinstitute.org/docs/secure-names-bit-strings.pdf) In *Proceedings of the 4th ACM Conference on Computer and Communications Security*, pages 28-35, April 1997.
+5. <span id="ref-5"></span>S. Haber, W.S. Stornetta, ["Secure names for bit-strings,"](https://cdn.nakamotoinstitute.org/docs/secure-names-bit-strings.pdf) In *Proceedings of the 4th ACM Conference on Computer and Communications Security*, pages 28-35, April 1997.
 
-6. A. Back, ["Hashcash - a denial of service counter-measure,"](https://cdn.nakamotoinstitute.org/docs/hashcash.pdf) [http://www.hashcash.org/papers/hashcash.pdf](http://www.hashcash.org/papers/hashcash.pdf), 2002.
+6. <span id="ref-6"></span>A. Back, ["Hashcash - a denial of service counter-measure,"](https://cdn.nakamotoinstitute.org/docs/hashcash.pdf) [http://www.hashcash.org/papers/hashcash.pdf](http://www.hashcash.org/papers/hashcash.pdf), 2002.
 
-7. R.C. Merkle, ["Protocols for public key cryptosystems,"](https://nakamotoinstitute.org/library/public-key-cryptosystems/) In *Proc. 1980 Symposium on Security and Privacy*, IEEE Computer Society, pages 122-133, April 1980.
+7. <span id="ref-7"></span>R.C. Merkle, ["Protocols for public key cryptosystems,"](https://nakamotoinstitute.org/library/public-key-cryptosystems/) In *Proc. 1980 Symposium on Security and Privacy*, IEEE Computer Society, pages 122-133, April 1980.
 
-8. W. Feller, ["An introduction to probability theory and its applications,"](https://nakamotoinstitute.org/library/introduction-probability-theory-vol-i/) 1957.
+8. <span id="ref-8"></span>W. Feller, ["An introduction to probability theory and its applications,"](https://nakamotoinstitute.org/library/introduction-probability-theory-vol-i/) 1957.
