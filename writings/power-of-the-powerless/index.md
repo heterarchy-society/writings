@@ -8,7 +8,6 @@ type: essay
 glossary:
   - parallel-society
   - samizdat
-  - cypherpunk
 sources:
   - path: main.md
     format: md
