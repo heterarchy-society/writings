@@ -1,5 +1,6 @@
 [collection]
 name = "writings"
+schema = "writings.json"
 source_dir = "writings"
 format = "md"
 output_key = "writings"

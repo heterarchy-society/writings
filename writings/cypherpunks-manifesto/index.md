@@ -39,7 +39,7 @@ electronic age cannot be granted by institutions — it must be seized through [
 
 Written during the [[crypto-wars|Crypto Wars]] of the early 1990s, when governments in the
 US and Europe were actively trying to restrict [[encryption]] and mandate law-enforcement
-access to private communications. Hughes's answer was not political lobbying but engineering:
+access to private communications. His answer was not political lobbying but engineering:
 build and deploy the tools, make them freely available, and the problem of institutional
 surveillance becomes technically unsolvable. The manifesto set the agenda for two decades of
 crypto-political work that followed — from PGP to Tor to Bitcoin.

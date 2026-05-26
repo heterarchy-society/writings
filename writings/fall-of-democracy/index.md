@@ -17,7 +17,7 @@ references:
     role: original
 license: © Logos Press Engine
 ---
-Second in the Spirit of Freedom trilogy ([[spirit-of-freedom|part one]]). Diagnoses
+Second in the Spirit of Freedom trilogy ([part one](writings:spirit-of-freedom)). Diagnoses
 democratic institutions as functionally hollow — captured elections, the Conflict
 Machine, and design failures that cannot self-correct. Distinguishes voting
 from genuine consent, surveys global democratic backsliding, and points toward

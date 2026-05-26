@@ -24,11 +24,11 @@ license: free to redistribute (per author)
 ---
 Wei Dai's 1998 proposal for anonymous digital cash and contract enforcement on
 an untraceable network — a direct precursor to [[bitcoin|Bitcoin]]. Written in
-response to Timothy May's [[cryptoanarchy|crypto-anarchy]], it describes money
+response to [Timothy C. May](people:timothy-c-may)'s [[cryptoanarchy|crypto-anarchy]], it describes money
 creation through proof-of-work, pseudonymous transfers, and smart-contract-like
 arbitration, all without trusted institutions.
 
-Satoshi Nakamoto cited b-money in the Bitcoin whitepaper. Dai circulated the
+[Satoshi Nakamoto](people:satoshi-nakamoto) cited b-money in the [Bitcoin whitepaper](writings:bitcoin-whitepaper). Dai circulated the
 text on the [[cypherpunk]] mailing list; the second protocol's server model and
 the appendix's auction-based money creation anticipate later cryptocurrency
 design debates. The author remains intensely private, but the document is among

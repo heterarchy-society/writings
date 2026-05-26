@@ -19,7 +19,7 @@ references:
     role: original
 license: public domain
 ---
-Benda's 1978 essay coins the concept of the [[parallel-society|parallel polis]]: a network of
+Benda's 1978 essay coins the concept of the [[parallel polis|parallel-society]]: a network of
 independent institutions — schools, courts, media, cultural spaces — built alongside the
 totalitarian state rather than in direct opposition to it. The goal is not to overthrow the
 system but to make it irrelevant.
