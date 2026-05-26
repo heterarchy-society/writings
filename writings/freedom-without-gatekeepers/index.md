@@ -1,7 +1,7 @@
 ---
 title: Building Freedom Without Gatekeepers
 authors:
-  - Josiah Warren
+  - Josiah Warren|josiah-warren
 year: 2026
 date: "2026-01-30"
 language: en

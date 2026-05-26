@@ -1,7 +1,7 @@
 ---
 title: What Happened to the Spirit of Freedom?
 authors:
-  - Josiah Warren
+  - Josiah Warren|josiah-warren
 year: 2025
 date: "2025-07-04"
 language: en

@@ -1,7 +1,7 @@
 ---
 title: The Fall of Democracy (and What Comes After)
 authors:
-  - Josiah Warren
+  - Josiah Warren|josiah-warren
 year: 2025
 date: "2025-10-15"
 language: en
