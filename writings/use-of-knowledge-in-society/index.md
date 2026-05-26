@@ -32,6 +32,6 @@ Markets solve this not by transmitting complete information to a central planner
 but through the price system, which communicates just enough for individuals to
 adjust their plans to conditions they cannot fully know. The argument became
 foundational for the Austrian School critique of central planning and for later
-thinking about [[decentralized coordination|decentralization]] — from spontaneous
+thinking about [[decentralization|decentralized coordination]] — from spontaneous
 order to distributed systems that aggregate local knowledge without requiring
 anyone to possess the whole picture.

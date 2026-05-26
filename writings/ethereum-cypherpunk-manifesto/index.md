@@ -25,6 +25,6 @@ references:
   - url: https://etherscan.io/blob/0x0112f60d433dc40213731c931bb38377f64e39906f77414583fa9d3eb04274c7?bid=214053
     role: blob
 ---
-An Ethereum-specific return to [[cypherpunk]] first principles. Written in 2024, the manifesto argues that the ecosystem's legitimacy depends on defending [[privacy]], security, and [[censorship-resistance|censorship resistance]] as core commitments rather than optional features.
+An Ethereum-specific return to [[cypherpunk]] first principles. Written in 2024, the manifesto argues that the ecosystem's legitimacy depends on defending [[privacy]], security, and [[censorship resistance|censorship-resistance]] as core commitments rather than optional features.
 
-Its practical programme is recognisably Ethereum-native: integrate privacy-preserving tools such as [[zero-knowledge-proof|zero-knowledge proofs]] and [[homomorphic-encryption|homomorphic encryption]], protect open access to the network, and treat decentralised governance, immutability, and global collaboration as pillars built on top of those commitments. The text was also published on-chain and as an EIP-4844 blob, turning its own preservation into part of the argument.
+Its practical programme is recognisably Ethereum-native: integrate privacy-preserving tools such as [[zero-knowledge proofs|zero-knowledge-proof]] and [[homomorphic encryption|homomorphic-encryption]], protect open access to the network, and treat decentralised governance, immutability, and global collaboration as pillars built on top of those commitments. The text was also published on-chain and as an EIP-4844 blob, turning its own preservation into part of the argument.

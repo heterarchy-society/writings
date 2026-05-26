@@ -34,5 +34,5 @@ The essay's practical conclusion — that leaks nonlinearly degrade unjust consp
 by raising their "secrecy tax" and forcing defensive isolation — became the
 operating logic behind [[whistleblowing|whistleblowing]] infrastructure. Written
 in the [[cypherpunk]] milieu, it reframes transparency not as moral appeal but as
-an attack on conspiratorial cognition, with implications for [[decentralization|decentralized]]
+an attack on conspiratorial cognition, with implications for [[decentralized|decentralization]]
 resistance to closed power structures.

@@ -34,7 +34,7 @@ writings/cypherpunks-manifesto/
 | `glossary` | no | string[] | Related glossary term IDs |
 | `translations` | no | object[] | Available translations (`language` + `path`) |
 
-The body of `index.md` (below the frontmatter) is a short description. Use `[[wiki links]]` for glossary terms and `[label](writings:id)` (or other collections) for cross-dataset links. Authors in frontmatter are linked on the site automatically — do not repeat `[Author](people:id)` in the description. See the Atlas README wiki links section.
+The body of `index.md` (below the frontmatter) is a short description. Use `[[wiki links]]` for glossary terms in MediaWiki order (`[[term-id|label]]`) and `[label](writings:id)` for cross-dataset links. Authors in frontmatter are linked on the site automatically — do not repeat `[Author](people:id)` in the description. See the Atlas README wiki links section.
 
 **Example:**
 

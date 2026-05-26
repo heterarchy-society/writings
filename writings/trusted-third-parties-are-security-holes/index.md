@@ -30,7 +30,7 @@ designers assumed TTPs away instead of minimizing them.
 The paper proposes designing protocols around the cheapest credible trust assumptions,
 preferably eliminating TTPs entirely through mathematics — digital mixes, multiparty
 computation, Byzantine-resilient replication, and remote attestation of server code.
-Written as Szabo was developing [[smart-contract|smart contract]] ideas and reusable
-proofs of work toward [[bitcoin|bit gold]], it became a foundational critique of
-centralized trust in [[cryptography|cryptographic]] systems and a design methodology for
-[[decentralization|decentralized]] security.
+Written as Szabo was developing [[smart contract|smart-contract]] ideas and reusable
+proofs of work toward [[bit gold|bitcoin]], it became a foundational critique of
+centralized trust in [[cryptographic|cryptography]] systems and a design methodology for
+[[decentralized|decentralization]] security.

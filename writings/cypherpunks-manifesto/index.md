@@ -37,7 +37,7 @@ Foundational text of the [[cypherpunk]] movement. Hughes argues that [[privacy]]
 electronic age cannot be granted by institutions — it must be seized through [[cryptography]].
 "Cypherpunks write code."
 
-Written during the [[crypto-wars|Crypto Wars]] of the early 1990s, when governments in the
+Written during the [[Crypto Wars|crypto-wars]] of the early 1990s, when governments in the
 US and Europe were actively trying to restrict [[encryption]] and mandate law-enforcement
 access to private communications. His answer was not political lobbying but engineering:
 build and deploy the tools, make them freely available, and the problem of institutional

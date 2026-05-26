@@ -23,8 +23,8 @@ references:
 license: free to redistribute (per author)
 ---
 Wei Dai's 1998 proposal for anonymous digital cash and contract enforcement on
-an untraceable network — a direct precursor to [[bitcoin|Bitcoin]]. Written in
-response to [Timothy C. May](people:timothy-c-may)'s [[cryptoanarchy|crypto-anarchy]], it describes money
+an untraceable network — a direct precursor to [[Bitcoin|bitcoin]]. Written in
+response to [Timothy C. May](people:timothy-c-may)'s [[crypto-anarchy|cryptoanarchy]], it describes money
 creation through proof-of-work, pseudonymous transfers, and smart-contract-like
 arbitration, all without trusted institutions.
 
@@ -32,5 +32,5 @@ arbitration, all without trusted institutions.
 text on the [[cypherpunk]] mailing list; the second protocol's server model and
 the appendix's auction-based money creation anticipate later cryptocurrency
 design debates. The author remains intensely private, but the document is among
-the clearest early attempts to make [[cryptography|cryptographic]] anarchy
+the clearest early attempts to make [[cryptographic|cryptography]] anarchy
 economically workable.

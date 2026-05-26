@@ -18,7 +18,7 @@ references:
     role: original
 license: CC BY (Electronic Frontier Foundation site license)
 ---
-John Perry Barlow's 1996 manifesto for [[digital-freedom|digital freedom]] and an autonomous
+John Perry Barlow's 1996 manifesto for [[digital freedom|digital-freedom]] and an autonomous
 Cyberspace. Written in Davos the day after the United States passed the Communications Decency
 Act, it addresses "Governments of the Industrial World" as obsolete authorities attempting to
 impose territorial law on a borderless networked society.
@@ -26,5 +26,5 @@ impose territorial law on a borderless networked society.
 The declaration became one of the clearest expressions of early internet exceptionalism: a
 belief that online communities could build their own norms, markets, identities, and forms of
 governance beyond state control. Its confidence now reads as both prophecy and artifact, but its
-core demand remains sharply [[anti-censorship|censorship-resistance]]: leave the networked mind
+core demand remains sharply [[censorship-resistance|anti-censorship]]: leave the networked mind
 free to speak, associate, and route around coercion.

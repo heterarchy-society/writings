@@ -27,7 +27,7 @@ introduced the greengrocer parable: ritual display of regime slogans without bel
 sustaining "living within the lie."
 
 The essay's core concepts — post-totalitarianism, the hidden sphere, independent
-life, and [[living in truth|parallel-society]] — reframed dissidence not as heroic
+life, and [[parallel-society|living in truth]] — reframed dissidence not as heroic
 opposition but as ordinary people refusing to participate in ideological performance.
 [Václav Benda](people:vaclav-benda)'s [Paralelní polis](writings:paralelni-polis) (same year, same milieu) asked what
 to build; Havel explained why the system's power depends on everyone's complicity,

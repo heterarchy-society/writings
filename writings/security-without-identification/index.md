@@ -30,11 +30,11 @@ of universal identifiers linking every purchase, message, and credential, indivi
 could use separate digital pseudonyms with each organization — unlinkable even if all
 institutions collude.
 
-The paper sketches a personal "card computer" for [[cryptography|cryptographic]]
-communication, [[privacy-protected|privacy]] payments via blind signatures, and
+The paper sketches a personal "card computer" for [[cryptographic|cryptography]]
+communication, [[privacy|privacy-protected]] payments via blind signatures, and
 credential transfer without identification. It introduced unconditionally untraceable
 messaging (the dining cryptographers problem), digital cash mechanics later realized
 in DigiCash, and pseudonymous credential systems. [Satoshi Nakamoto](people:satoshi-nakamoto) cited Chaum's
 earlier work; this article is the broadest statement of the vision that shaped
-[[anonymous-communication|anonymous communication]] research and
+[[anonymous communication|anonymous-communication]] research and
 [[cypherpunk|cypherpunk]] electronic commerce.

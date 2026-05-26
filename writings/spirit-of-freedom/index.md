@@ -20,7 +20,7 @@ license: © Logos Press Engine
 ---
 First in a Logos Press Engine trilogy. Argues that what people mourn is not
 democracy's death but the fading of the Spirit of Freedom — self-governance
-through [[voluntary-association|voluntary association]] and consent, not ritual
+through [[voluntary association|voluntary-association]] and consent, not ritual
 elections alone. Contrasts colonial pamphleteering and printing presses with
 today's algorithmic consolidation of voice, and calls for new experiments in
-[[decentralization|decentralized]] legitimacy without waiting for permission.
+[[decentralized|decentralization]] legitimacy without waiting for permission.
