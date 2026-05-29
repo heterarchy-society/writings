@@ -1,7 +1,7 @@
 ---
 title: The Ethereum Cypherpunk Manifesto
 authors:
-  - pcaversaccio
+  - pcaversaccio|pcaversaccio
 year: 2024
 language: en
 type: manifesto
