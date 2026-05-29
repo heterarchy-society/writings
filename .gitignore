@@ -1,6 +1,7 @@
 node_modules/
 package-lock.json
 dist/
+.atlas-cache
 .DS_Store
 .claude
 ElevenLabs*
